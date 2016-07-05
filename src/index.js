@@ -2,4 +2,5 @@ import React from "react"
 import ReactDOM from "react-dom"
 import HelloWorld from "./helloworld"
 
-ReactDOM.render(<HelloWorld />, document.getElementById('react-app'));
+ReactDOM.render(<HelloWorld who="le world" />,
+    document.getElementById('react-app'));
