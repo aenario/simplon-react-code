@@ -8,7 +8,7 @@ export default class HelloWorld extends React.Component {
         var counters = []
         for(var i=0, l=9; i<l; i++){
             if(i%2 == 0)
-            counters.push(<Counter startAt={i} />);
+            counters.push(<Counter key={i} startAt={i} />);
         }
 
         return <p>Hello {this.props.who} ! {counters}</p>;
