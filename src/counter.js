@@ -2,9 +2,9 @@ import React from "react"
 
 export default class Counter extends React.Component {
 
-    constructor(){
+    constructor(props){
         super()
-        this.state = {counter: 0}
+        this.state = {counter: props.startAt}
     }
 
     onTimer(){
