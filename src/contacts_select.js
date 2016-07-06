@@ -9,8 +9,8 @@ export default class ContactSelect extends React.Component {
 
     componentDidMount(){
         var that = this;
-        cozysdk.queryView('contact', 'all')
-        .then((contactsRows) => contactsRows.map((row) => row.value))
+        cozysdk.queryView('contact', 'all', {include_docs: true})
+        .then((contactsRows) => contactsRows.map((row) => row.doc))
         .then((contacts) => that.setState({contacts: contacts}))
         .catch( (err) => alert(err.message) && alert(err.stack))
     }
