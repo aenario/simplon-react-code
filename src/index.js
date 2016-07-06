@@ -1,6 +1,5 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import HelloWorld from "./helloworld"
+import MesPrets from "./mesprets_app"
 
-ReactDOM.render(<HelloWorld who="le world" />,
-    document.getElementById('react-app'));
+ReactDOM.render(<MesPrets />, document.getElementById('react-app'));

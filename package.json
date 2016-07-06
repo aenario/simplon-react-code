@@ -23,7 +23,8 @@
     "react-dom": "^15.2.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
-    "redux-devtools-instrument": "^1.0.1"
+    "redux-devtools-instrument": "^1.0.1",
+    "uuid": "^2.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
