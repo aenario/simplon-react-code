@@ -1,5 +1,6 @@
 import React from "react"
 import {LoanPropType} from "./proptypes"
+import ContactsSelect from "./contacts_select"
 
 export default class LoanForm extends React.Component {
 
@@ -31,9 +32,10 @@ export default class LoanForm extends React.Component {
                 onChange={this.onObjectChanged}
                 value={this.state.object} />
             to
-            <input type="text" placeholder="who"
-                   onChange={this.onContactChanged}
-                   value={this.state.contact} />
+            <ContactsSelect
+                onChange={this.onContactChanged}
+                value={this.state.contact} />
+
             <input type="submit" value="Go" />
         </form>
     }

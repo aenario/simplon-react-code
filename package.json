@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/aenario/simplon-react-code",
   "dependencies": {
+    "cozy-sdk": "0.0.3",
+    "cozysdk-client": "https://github.com/cozy/cozy-browser-sdk",
     "lodash": "^4.13.1",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
